@@ -12,7 +12,7 @@ import numpy as np
 set_website_title("Your Drafter Website")
 #set_website_framed(False)
 set_site_information(author='Benjamin Louis', 
-                     description='The function creates a graph of a projectile's path with drag based off of user-entered data.', 
+                     description='The function creates a graph of a projectile\'s path with drag based off of user-entered data.', 
                      sources=[], 
                      planning=[], 
                      links=[])
