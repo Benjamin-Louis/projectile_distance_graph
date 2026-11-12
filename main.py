@@ -8,6 +8,15 @@ from scipy.integrate import solve_ivp
 import os
 import numpy as np
 
+#hide_debug_information()
+set_website_title("Your Drafter Website")
+#set_website_framed(False)
+set_site_information(author='Benjamin Louis', 
+                     description='The function creates a graph of a projectile's path with drag based off of user-entered data.', 
+                     sources=[], 
+                     planning=[], 
+                     links=[])
+
 @dataclass
 class Projectile:
     '''
