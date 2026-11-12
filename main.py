@@ -207,7 +207,7 @@ def convert_simulation_data(state: State, launch_angle: str, velocity: str) -> P
     state.current_simulation = simulation
     #this route has a button to generate the simulation 
     return Page(state, [
-        "Start Simulation",
+        Header("Start Simulation"),
         Button("Start Simulation","start_simulation"),
         Button("Home", "index")
     ])
