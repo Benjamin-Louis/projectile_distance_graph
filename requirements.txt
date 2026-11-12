@@ -1,2 +1,2 @@
 scipy
-python3 -m pip install scipy-stubs
+scipy-stubs
