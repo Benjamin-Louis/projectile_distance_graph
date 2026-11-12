@@ -597,8 +597,8 @@ def hit_ground_event(t, state_vars, *args):
     direction = -1 means that the event is True when the graph crosses the x-axis from positive to negative.
     When both elements are combined, the calculations stop before y can be negative.
 '''
-hit_ground_event.terminal = True
-hit_ground_event.direction = -1
+setattr(hit_ground_event.terminal = True)
+setattr(hit_ground_event.direction = -1)
 
 #Start the server
 start_server(initial_state = State(
