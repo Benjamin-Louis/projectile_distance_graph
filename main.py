@@ -7,14 +7,21 @@ from scipy.integrate import solve_ivp
 import os
 import numpy as np
 
-#hide_debug_information()
+hide_debug_information()
 set_website_title("Your Drafter Website")
-#set_website_framed(False)
+set_website_framed(False)
 set_site_information(author='Benjamin Louis', 
                      description='The function creates a graph of a projectile\'s path with drag based off of user-entered data.', 
-                     sources=[], 
-                     planning=[], 
-                     links=[])
+                     sources=["https://chatgpt.com/share/6af50c48-7fa4-83ea-9acd-562f0193cf33",
+                             "https://chatgpt.com/share/6af50c17-4f6c-83e9-a00e-6dbd9ad511a9",
+                             "https://share.google/aimode/t4M6WCo9H6tcEKrj5",
+                             "https://share.google/aimode/mmUzl35KQsjunjgAK",
+                             "https://chatgpt.com/share/6af53beb-afdc-83ea-9ea6-7f1fb398d237",
+                             "https://share.google/aimode/imr6ERLdpmN6XQUBi",
+                             "https://chatgpt.com/share/6af60b62-e390-83e9-b881-91667296231e"], 
+                     planning=["https://docs.google.com/document/d/1VkhQzzL_hAL-LM0ALLoCXEwGkgAoG5JEXihYvpLVkhk/edit?tab=t.0#heading=h.1xxqmmg350hh",
+                               "https://docs.google.com/document/d/1UGXuFzJeC3ACXTOgllD_ehLmz1py_CDWsJil0ru0D7A/edit?tab=t.0#heading=h.1xxqmmg350hh"], 
+                     links=["https://benjamin-louis.github.io/projectile_distance_graph/"])
 
 @dataclass
 class Projectile:
