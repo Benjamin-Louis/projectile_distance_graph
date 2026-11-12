@@ -168,8 +168,8 @@ def convert_mass(state: State, mass: str) -> Page:
         Once the mass is entered, a new page will ask for the launch angle and intial velocity
         Mass must be conveted from a str to a float
     '''
-    mass=float(mass)
-    state.current_projectile.mass=mass
+    mass_value=float(mass)
+    state.current_projectile.mass=mass_value
     return Page(state, [
         Header("Launch Angle (degrees)"),
         "Launch Angle:",
@@ -187,11 +187,11 @@ def convert_simulation_data(state: State, launch_angle: str, velocity: str) -> P
         This route will convert the launch angle and velocity in floats.
         Then, the data will be added to a simulation
     '''
-    launch_angle = float(launch_angle)
+    launch_angle_value = float(launch_angle)
     initial_velocity = float(velocity)
     #create a new simulation with the data
     simulation = Simulation(
-        launch_angle,
+        launch_angle_value,
         initial_velocity,
         state.current_projectile,
         #Include 2 temporary velocities before the calculation
@@ -328,9 +328,9 @@ def view_simulation(state: State, test_number: str) -> Page:
         This route will convert the number the user enters into an integer.
         A loop will then run through simulation_history and display the test the user enters.
     '''
-    test_number=int(test_number)
+    test_number_value=int(test_number)
     for index, a_simulation in enumerate(state.simulation_history):
-        if test_number == index+1:
+        if test_number_value == index+1:
             x_position=a_simulation.horizontal_positions
             y_position=a_simulation.vertical_positions
             #Save the graph
