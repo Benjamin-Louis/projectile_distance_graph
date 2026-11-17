@@ -1,5 +1,4 @@
 from drafter import *
-from bakery import assert_equal
 from dataclasses import dataclass
 import matplotlib.pyplot as plt
 from math import sin, cos, pi, radians
