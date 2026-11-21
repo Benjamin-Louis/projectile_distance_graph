@@ -197,7 +197,7 @@ def get_other_data(state: State) -> Page:
     state.current_projectile.projectile_type = "other"
     return Page(state, [
         Header("Other Data"),
-        "Enter Frontal Area:",
+        "Enter Frontal Area (m):",
         TextBox("frontal_area",""),
         "Estimated Drag Coefficient (typically between 0.001-2.1):",
         TextBox("drag_coefficient",""),
