@@ -532,6 +532,7 @@ def simulation_history(state: State) -> Page:
     return Page(state, [
         Header("Enter Test You Want to View"),
         "Type the number of the test you want to view",
+        "Example: type 1 to view your first test",
         TextBox("test_number",""),
         Button("Enter", "view_simulation")
     ])
