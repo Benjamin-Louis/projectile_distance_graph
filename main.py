@@ -121,7 +121,7 @@ def sphere(state: State) -> Page:
         Header("Object Type: Sphere"),
         "Enter Radius (m):",
         TextBox("measurement",""),
-        Button("Continue", "get_mass"),
+        Button("Enter", "get_mass"),
         Button("Home", "index")
     ])
 
@@ -145,7 +145,7 @@ assert_equal(sphere(State([Simulation(5.0, 5.0,
                 Header("Object Type: Sphere"),
             "Enter Radius (m):",
             TextBox("measurement",""),
-            Button("Continue", "get_mass"),
+            Button("Enter", "get_mass"),
             Button("Home", "index")
             ]))
 
@@ -160,7 +160,7 @@ def cube(state: State) -> Page:
         Header("Object Type: Cube"),
         "Enter Width (m):",
         TextBox("measurement",""),
-        Button("Continue", "get_mass"),
+        Button("Enter", "get_mass"),
         Button("Home", "index")
     ])
 
@@ -184,7 +184,7 @@ assert_equal(cube(State([Simulation(5.0, 5.0,
                 Header("Object Type: Cube"),
                 "Enter Width (m):",
                 TextBox("measurement",""),
-                Button("Continue", "get_mass"),
+                Button("Enter", "get_mass"),
                 Button("Home", "index")
                 ]))
 
@@ -201,7 +201,7 @@ def get_other_data(state: State) -> Page:
         TextBox("frontal_area",""),
         "Estimated Drag Coefficient (typically between 0.001-2.1):",
         TextBox("drag_coefficient",""),
-        Button("Continue", "get_mass"),
+        Button("Enter", "get_mass"),
         Button("Home", "index")
     ])
 
