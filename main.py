@@ -199,7 +199,7 @@ def get_other_data(state: State) -> Page:
         Header("Other Data"),
         "Enter Frontal Area:",
         TextBox("frontal_area",""),
-        "Estimated Drag Coefficient:",
+        "Estimated Drag Coefficient (typically between 0.001-2.1):",
         TextBox("drag_coefficient",""),
         Button("Continue", "get_mass"),
         Button("Home", "index")
@@ -531,6 +531,7 @@ def simulation_history(state: State) -> Page:
     '''
     return Page(state, [
         Header("Enter Test You Want to View"),
+        "Type the number of the test you want to view",
         TextBox("test_number",""),
         Button("Enter", "view_simulation")
     ])
